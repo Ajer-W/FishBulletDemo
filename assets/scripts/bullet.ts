@@ -43,7 +43,6 @@ export default class Bullet extends cc.Component {
         var isborder: boolean = false;
         if (worldPos.x < 0 || worldPos.x > cc.winSize.width) {
             this.currentAngel = -this.currentAngel + 180;
-            this.node.angle = this.currentAngel;
             if (worldPos.x < 0) {
                 worldPos.x = 0;
             }
@@ -55,7 +54,6 @@ export default class Bullet extends cc.Component {
         }
         if (worldPos.y < 0 || worldPos.y > cc.winSize.height) {
             this.currentAngel = -this.currentAngel;
-            this.node.angle = this.currentAngel;
             if (worldPos.y < 0) {
                 worldPos.y = 0;
             }
